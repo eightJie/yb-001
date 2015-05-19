@@ -1,0 +1,118 @@
+@import '../../common/reset.less';
+@import '../../common/func.less';
+@import '../../common/ani.less';
+@import '../../common/common.less';
+@import 'c.less';
+
+.swiper-2{
+
+	.content-txt{
+		position: absolute;
+		top: 367px;
+		right: 75px;
+		.transform(rotate(15deg));
+		z-index: 1000;
+
+		>span.block{
+			display: inline-block;
+			float: right;
+			width: 28px;
+		}
+	}
+
+	.img-wrap{
+		width: 100%;
+		height: 98%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		.trans-origin(left top);
+		.transform(rotate(15deg) translateX(-40px) translateY(-18px));
+		overflow: hidden;
+		z-index: 2;
+		.ani-name(imgAni2);
+	}
+
+	.img-c{
+		.bg-cover();
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		.trans-origin(left top);
+		.transform(rotate(-15deg) scale(1.1));
+		z-index: 1;
+	}
+
+
+	.clock-wrap{
+		  position: absolute;
+		  right: 0;
+		  bottom: 0;
+		  width: 214px;
+  		  height: 282px;
+		  overflow: hidden;
+		  right: -37px;
+	}
+
+	.clock-item{
+		.bg-contain();
+		position: absolute;
+	}
+
+	.clock-1{
+		.bgImgRoot('clock-1.png');
+		width: 87px;
+		height: 87px;
+		right: 0;
+	}
+
+	.clock-2{
+		.bgImgRoot('clock-2.png');
+		width: 194px;
+		height: 194px;
+		bottom: 0;
+  		right: 16px;
+	}
+
+	.clock-3{
+		.bgImgRoot('clock-3.png');
+		width: 48px;
+		height: 48px;
+		left: 78px;
+  		top: 36px;
+	}
+
+	.se{
+		.bg-contain();
+		.bgImg('se.png', 2);
+		width: 577px;
+		height: 156px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		.ani-name(se2);
+	}
+
+}
+
+@-webkit-keyframes imgAni2{
+	0%{
+		.transform(rotate(15deg) translateX(-550px) translateY(-18px));
+		opacity: .7;
+	}
+	100%{
+		
+		// .transform(rotate(15deg) translateX(-40px) translateY(-18px));
+	}
+}
+
+@-webkit-keyframes se2{
+	0%{
+		.transform(translateX(550px));
+		opacity: .7;
+	}
+	100%{
+	}
+}

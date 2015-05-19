@@ -1,0 +1,44 @@
+.bg-contain{
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.bg-cover{
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.ab-center(@wid, @hei){
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: @wid;
+	height: @hei;
+	margin-left: -@wid/2;
+	margin-top: -@hei/2;
+
+}
+
+.bg-normal(@url){
+	background: url(@url) no-repeat center center;
+}
+
+.trans-origin(@v){
+	-webkit-transform-origin: @v;
+	-o-transform-origin: @v;
+	transform-origin: @v;
+}
+
+.transform(@v){
+	-webkit-transform: @v;
+	-o-transform: @v;
+	transform: @v;
+}

@@ -1,0 +1,177 @@
+@import '../../common/reset.less';
+@import '../../common/func.less';
+@import '../../common/ani.less';
+@import '../../common/common.less';
+@import 'c.less';
+
+.cover{
+	.clock{
+		.bg-contain();
+		.bgImg('biaopan.png');
+		width: 492px;
+		height: 492px;
+		position: absolute;
+		left: 50%;
+		margin-left: -246px;
+		top: 134px;
+
+		.minute{
+			.bg-contain();
+			.bgImg('fenzhen.png');
+			background-position: 0 85%;
+			width: 30px;
+			height: 100%;
+			position: absolute;
+	        top: 0;
+		    left: 50%;
+		    margin-left: -15px;
+		    z-index: 2;
+		    .ani-name(cover-minute);
+		    .ani-duration(6s);
+		}
+
+		.hour{
+			.bg-contain();
+			.bgImg('shizhen.png');
+			background-position: center 41%;
+			width: 62px;
+			height: 100%;
+			position: absolute;
+	        top: 0;
+		    left: 50%;
+		    margin-left: -31px;
+		    z-index: 1;
+		    .ani-name(cover-hour);
+		    .ani-duration(6s);
+		}
+
+	}
+
+	.bg-txt{
+		.bg-contain();
+		.bgImg('txt.png');
+		width: 248px;
+		height: 73px;
+		position: absolute;
+		top: 756px;
+		left: 50%;
+		margin-left: -124px;
+	}
+
+	.hand{
+		.bg-contain();
+		.bgImg('hand.png');
+		width: 101px;
+		height: 66px;
+		position: absolute;
+		top: 559px;
+		left: 464px;
+		z-index: 100;
+		.ani-count(5);
+		.ani-dir-both();
+	}
+}
+
+/**
+ * 时针旋转
+ */
+@-webkit-keyframes cover-hour{
+	0%{
+		-webkit-transform: rotate3d(0, 0, 1, 15deg);
+        transform: rotate3d(0, 0, 1, 15deg);
+        .ani-time-func(ease-in);
+	}
+	15%{
+		-webkit-transform: rotate3d(0, 0, 1, 7deg);
+        transform: rotate3d(0, 0, 1, 7deg);
+        .ani-time-func(ease-in);
+	}
+	17%{
+		-webkit-transform: rotate3d(0, 0, 1, 7deg);
+        transform: rotate3d(0, 0, 1, 7deg);
+	}
+	30%{
+		-webkit-transform: rotate3d(0, 0, 1, 15deg);
+        transform: rotate3d(0, 0, 1, 15deg);
+        .ani-time-func(ease-in);
+	}
+	35%{
+		-webkit-transform: rotate3d(0, 0, 1, 15deg);
+        transform: rotate3d(0, 0, 1, 15deg);
+	}
+	45%{
+		-webkit-transform: rotate3d(0, 0, 1, 7deg);
+        transform: rotate3d(0, 0, 1, 7deg);
+        .ani-time-func(ease-in);
+	}
+	47%{
+		-webkit-transform: rotate3d(0, 0, 1, 7deg);
+        transform: rotate3d(0, 0, 1, 7deg);
+	}
+	60%{
+		-webkit-transform: rotate3d(0, 0, 1, 15deg);
+        transform: rotate3d(0, 0, 1, 15deg);
+        .ani-time-func(ease-in);
+	}
+	65%{
+		-webkit-transform: rotate3d(0, 0, 1, 15deg);
+        transform: rotate3d(0, 0, 1, 15deg);
+	}
+	100%{
+		-webkit-transform: rotate3d(0, 0, 1, 0deg);
+        transform: rotate3d(0, 0, 1, 0deg);
+        .ani-time-func(ease-in);
+	}
+}
+
+/**
+ * 分针旋转
+ */
+@-webkit-keyframes cover-minute{
+	0%{
+		-webkit-transform: rotate3d(0, 0, 1, 0deg);
+        transform: rotate3d(0, 0, 1, 0deg);
+        .ani-time-func(ease-in);
+	}
+	15%{
+		-webkit-transform: rotate3d(0, 0, 1, -70deg);
+        transform: rotate3d(0, 0, 1, -70deg);
+        .ani-time-func(ease-in);
+	}
+	17%{
+		-webkit-transform: rotate3d(0, 0, 1, -70deg);
+        transform: rotate3d(0, 0, 1, -70deg);
+	}
+	30%{
+		-webkit-transform: rotate3d(0, 0, 1, 0deg);
+        transform: rotate3d(0, 0, 1, 0deg);
+        .ani-time-func(ease-in);
+	}
+	35%{
+		-webkit-transform: rotate3d(0, 0, 1, 0deg);
+        transform: rotate3d(0, 0, 1, 0deg);
+	}
+	45%{
+		-webkit-transform: rotate3d(0, 0, 1, -70deg);
+        transform: rotate3d(0, 0, 1, -70deg);
+        .ani-time-func(ease-in);
+	}
+	47%{
+		-webkit-transform: rotate3d(0, 0, 1, -70deg);
+        transform: rotate3d(0, 0, 1, -70deg);
+	}
+	60%{
+		-webkit-transform: rotate3d(0, 0, 1, 0deg);
+        transform: rotate3d(0, 0, 1, 0deg);
+        .ani-time-func(ease-in);
+	}
+	65%{
+		-webkit-transform: rotate3d(0, 0, 1, 0deg);
+        transform: rotate3d(0, 0, 1, 0deg);
+	}
+	100%{
+		-webkit-transform: rotate3d(0, 0, 1, -180deg);
+        transform: rotate3d(0, 0, 1, -180deg);
+        .ani-time-func(ease-in);
+	}
+}

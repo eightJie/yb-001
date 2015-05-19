@@ -1,0 +1,49 @@
+@import 'func.less';
+
+@bgColor: #b8a68e;
+
+body{
+	background-color: @bgColor;
+}
+
+.wrap{
+	position: absolute;
+	width: 640px;
+	height: 100%;
+	overflow: hidden;
+	left: 50%;
+	margin-left: -320px;
+	font-size: 22px;
+	text-align: center;
+}
+
+.loading{
+	.bg-normal('../../imgs/loading.png');
+	.bg-contain();
+	.ab-center(66px, 66px);
+}
+
+#cover{
+	.bg-cover();
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 5000;
+	visibility: hidden;
+}
+
+.swiper-container{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+}
+
+.swiper-slide{
+	.bg-cover();
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
