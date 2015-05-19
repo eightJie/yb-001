@@ -129,6 +129,7 @@
 		.bgImg('se-h.png', 5);
 		width: 507px;
 		height: 141px;
+		.ani-name(se5-h);
 	}
 	.clock-wrap{
 		position: static;
@@ -168,6 +169,16 @@
 @-webkit-keyframes se5{
 	0%{
 		.transform(translateX(-200px) translateY(-100px));
+		opacity: 0;
+	}
+	100%{
+	}
+}
+
+
+@-webkit-keyframes se5-h{
+	0%{
+		.transform(translateX(-200px) translateY(100px));
 		opacity: 0;
 	}
 	100%{
