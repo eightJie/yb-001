@@ -2,42 +2,8 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, target-densitydpi=device-dpi, user-scalable=0"  />
+	<meta name="viewport" content="width=640, target-densitydpi=device-dpi, user-scalable=0"  />
 	<title>青春记忆</title>
-    <script>
-        var size = findDimensions();
-        var viewportWid = 640;
-
-        if(size.height / size.width < 1038 / 640 ){
-            viewportWid = Math.ceil( 1038 / size.height  * size.width);
-        }
-        document.write('<meta name="viewport" content="width=' + viewportWid + ', target-densitydpi=device-dpi, user-scalable=0"  />');
-
-        //获取窗口尺寸
-        function findDimensions() {
-            //获取窗口宽度
-            if (window.innerWidth)
-                winWidth = window.innerWidth;
-            else if ((document.body) && (document.body.clientWidth))
-                winWidth = document.body.clientWidth;
-
-            // 获取窗口高度
-            if (window.innerHeight)
-                winHeight = window.innerHeight;
-            else if ((document.body) && (document.body.clientHeight))
-                winHeight = document.body.clientHeight;
-
-            if (document.documentElement && document.documentElement.clientHeight && document.documentElement.clientWidth) {
-                winHeight = document.documentElement.clientHeight;
-                winWidth = document.documentElement.clientWidth;
-            }
-            return {
-                width: winWidth,
-                height: winHeight
-            }
-        }
-
-    </script>
     <link rel="stylesheet" type="text/css" href="../../lib/animate/animate.css">
 	<link rel="stylesheet" type="text/css" href="../../lib/swiper/css/swiper.min.css">
 	<link rel="stylesheet" type="text/css" href="../../src/youth/style.css">
