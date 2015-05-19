@@ -8,7 +8,8 @@ $(window).on('load', function() {
 			onInit: function(s) {
 
 				$('#loading').remove();
-				showCover();
+				// showCover();
+				showSwiper();
 
 			},
 			onSlideChangeEnd: function(s) {

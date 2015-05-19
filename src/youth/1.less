@@ -3,6 +3,7 @@
 @import '../../common/ani.less';
 @import '../../common/common.less';
 @import 'c.less';
+@import '0.less';
 
 .swiper-1{
 
@@ -88,6 +89,10 @@
   		bottom: 0;
 	}
 
+	.clock-4{
+		display: none;
+	}
+
 	.se{
 		.bg-contain();
 		.bgImg('se.png', 1);
@@ -98,6 +103,60 @@
 		right: 0;
 		.ani-name(se);
 	}
+}
+
+.swiper-1.horizontal{
+	.img-wrap{
+		width: 100%;
+		height: 520px;
+		top: 114px;
+		left: 0;
+		.transform(none);
+	}
+
+	.img-c{
+		.transform(none);
+	}
+
+	.content-txt{
+		top: 715px;
+		left: 38px;
+		.transform(none);
+		text-align: left;
+		line-height: 1.5;
+
+		>span{
+			display: block;
+			width: auto;
+			float: none;
+		}
+	}
+
+	.clock-wrap{
+		position: static;
+	}
+
+	.clock-1{
+		top: 806px;
+		left: 485px;
+	}
+	.clock-2{
+		top: 660px;
+		left: 543px;
+	}
+	.clock-3{
+		top: 850px;
+		left: 572px;
+	}
+	.clock-4{
+		display: block;
+		.bgImgRoot('clock-1.png');
+		width: 87px;
+		height: 87px;
+		top: 850px;
+		right: 576px;
+	}
+
 }
 
 @-webkit-keyframes se{

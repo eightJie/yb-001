@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, target-densitydpi=device-dpi, user-scalable=0"  />
+	<title>青春记忆</title>
+    <script>
+        var size = findDimensions();
+        var viewportWid = 640;
+
+        if(size.height / size.width < 1038 / 640 ){
+            viewportWid = Math.ceil( 1038 / size.height  * size.width);
+        }
+        document.write('<meta name="viewport" content="width=' + viewportWid + ', target-densitydpi=device-dpi, user-scalable=0"  />');
+
+        //获取窗口尺寸
+        function findDimensions() {
+            //获取窗口宽度
+            if (window.innerWidth)
+                winWidth = window.innerWidth;
+            else if ((document.body) && (document.body.clientWidth))
+                winWidth = document.body.clientWidth;
+
+            // 获取窗口高度
+            if (window.innerHeight)
+                winHeight = window.innerHeight;
+            else if ((document.body) && (document.body.clientHeight))
+                winHeight = document.body.clientHeight;
+
+            if (document.documentElement && document.documentElement.clientHeight && document.documentElement.clientWidth) {
+                winHeight = document.documentElement.clientHeight;
+                winWidth = document.documentElement.clientWidth;
+            }
+            return {
+                width: winWidth,
+                height: winHeight
+            }
+        }
+
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../lib/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="../../lib/swiper/css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="../../src/youth/style.css">
+</head>
+<body>
+
+<div class="wrap">
+	<div id="loading" class="loading animated infinite block rotate-x duration-2"></div>
+    <div id="cover" class="cover">
+        <div class="clock">
+            <div class="hour animated"></div>
+            <div class="minute animated"></div>
+        </div>
+        <div class="bg-txt"></div>
+        <div class="hand animated fadeOut duration-f5"></div>
+    </div>
+	 <div class="swiper-container">
+        <div  id='main' class="swiper-wrapper">
+            <div class="swiper-slide swiper-1 horizontal">
+                <div class="img-wrap">
+                    <div class="animated youth-zoom-in duration-2">
+                        <div class="img-c" style="background-image: url(../../imgs/youth/1/img.png)">
+                        </div>
+                    </div>
+                </div>
+                <div class="clock-wrap">
+                    <div class="clock-item clock-1 animated infinite block clock-ani-y duration-12 delay-2"></div>
+                    <div class="clock-item clock-2"></div>
+                    <div class="clock-item clock-3 animated infinite block clock-ani-y duration-12 delay-2"></div>
+                    <div class="clock-item clock-4"></div>
+                </div>
+                <div class="se animated block duration-1"></div>
+                <div class="content-txt">
+                    <span class="animated block duration-2 delay-2 fadeIn">我放下钢笔</span>
+                    <span class="animated block duration-2 delay-3 fadeIn">轻轻的合上我的日记</span>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-2 horizontal">
+                <div class="se animated duration-1"></div>
+                <div class="img-wrap animated duration-2">
+                    <div class="img-c" style="background-image: url(../../imgs/youth/1/img.png)">
+                    </div>
+                </div>
+                <div class="content-txt">
+                    <span class="animated duration-2 delay-2 fadeIn">纯真是即使不小心相互伤害</span>
+                    <span class="animated duration-2 delay-3 fadeIn">还能不计前嫌的牵手</span>
+                </div>
+                <div class="clock-wrap">
+                    <div class="clock-item clock-1 animated infinite clock-ani-x duration-12 delay-2"></div>
+                    <div class="clock-item clock-2 animated infinite clock-ani-y duration-12 delay-2"></div>
+                    <div class="clock-item clock-3"></div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-3 horizontal">
+                <div class="se animated duration-2"></div>
+                <div class="img-wrap">
+                    <div class="img-c animated duration-2" style="background-image: url(../../imgs/youth/3/img.png)">
+                    </div>
+                </div>
+                <div class="content-txt animated duration-1 delay-2">
+                    <p>我们在成长中懂得不能妄求</p>
+                    <p>却总是难以释怀</p>
+                </div>
+                <div class="clock-wrap">
+                    <div class="clock-item clock-1 animated infinite clock-ani-x duration-12 delay-3"></div>
+                    <div class="clock-item clock-2"></div>
+                    <div class="clock-item clock-3"></div>
+                    <div class="clock-item clock-4"></div>
+                </div>
+                <div class="clock-wrap2">
+                    <div class="clock-item clock-2"></div>
+                    <div class="clock-item clock-3"></div>
+                    <div class="clock-item clock-4"></div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-4 horizontal">
+                <div class="se animated duration-1"></div>
+                <div class="img-wrap">
+                    <div class="img-c animated duration-2" style="background-image: url(../../imgs/youth/4/img.png)">
+                    </div>
+                </div>
+                <div class="content-txt">
+                    <p class="fadeIn animated duration-1 delay-2"><span>故事的结尾誓言都沦为叹息</span></p>
+                    <p class="fadeIn animated duration-1 delay-2d5">我愿意默默祝福就好</p>
+                </div>
+                <div class="clock-wrap">
+                    <div class="clock-item clock-1 animated infinite clock-ani-x duration-12 delay-3"></div>
+                    <div class="clock-item clock-2"></div>
+                    <div class="clock-item clock-3"></div>
+                    <div class="clock-item clock-4"></div>
+                </div>
+                <div class="clock-wrap2">
+                    <div class="clock-item clock-2"></div>
+                    <div class="clock-item clock-3"></div>
+                    <div class="clock-item clock-4"></div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-5 horizontal">
+                <div class="se animated duration-1"></div>
+                <div class="img-wrap">
+                    <div class="img-c animated duration-2" style="background-image: url(../../imgs/youth/5/img.png)">
+                    </div>
+                </div>
+                <div class="content-txt">
+                    <p class="fadeIn animated duration-1 delay-2">给往事不枯萎的理由</p>
+                    <p class="fadeIn animated duration-1 delay-2d5">不辜负这段如歌岁月</p>
+                </div>
+                <div class="clock-wrap">
+                    <div class="clock-item clock-1 animated infinite clock-ani-y duration-12 delay-3"></div>
+                    <div class="clock-item clock-2"></div>
+                    <div class="clock-item clock-3 animated infinite clock-ani-y duration-12 delay-3"></div>
+                    <div class="clock-item clock-4"></div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-6 horizontal">
+                <div class="se animated duration-1"></div>
+                <div class="img-wrap">
+                    <div class="img-c animated duration-2" style="background-image: url(../../imgs/youth/6/img.png)">
+                    </div>
+                </div>
+                <div class="content-txt">
+                    <p class="fadeIn animated duration-1 delay-2">和寂寞对话</p>
+                    <p class="fadeIn animated duration-1 delay-2d5">只是不相信你已离开</p>
+                </div>
+                <div class="clock-wrap">
+                    <div class="clock-item clock-1 animated infinite clock-ani-y duration-12 delay-2"></div>
+                    <div class="clock-item clock-2"></div>
+                    <div class="clock-item clock-3 animated infinite clock-ani-y duration-12 delay-2"></div>
+                    <div class="clock-item clock-4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../../lib/zepto/zepto.min.js"></script>
+<script src="../../lib/swiper/js/swiper.js"></script>
+<script src="../../src/youth/index.js"></script>
+</body>
+</html>
