@@ -1,0 +1,91 @@
+@import '../../common/reset.less';
+@import '../../common/func.less';
+@import '../../common/ani.less';
+@import '../../common/common.less';
+@import 'c.less';
+
+.swiper-5{
+
+	.img-wrap{
+		background-color: #fff;
+		width: 100%;
+		height: 797px;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.img-c{
+		.bg-cover();
+		width: 587px;
+		height: 736px;
+		position: absolute;
+		top: 31px;
+		left: 28px;
+	}
+	.content-txt{
+		position: absolute;
+		right: 54px;
+		bottom: 58px;
+	}
+	.dog{
+		.bg-contain();
+		.bgImg('dog.png', 5);
+		width: 138px;
+		height: 143px;
+		position: absolute;
+		left: 43px;
+		bottom: 38px;
+	}
+	.say-c{
+		.ani-name(say5-c);
+		.trans-origin(left bottom);
+		width: 65px;
+		height: 56px;
+		position: absolute;
+		left: 184px;
+		bottom: 86px;
+	}
+	.say{
+		.bg-contain();
+		.bgImg('say.png', 5);
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		.ani-name(say5);
+		.trans-origin(left bottom);
+		.ani-dir-both();
+		.ani-time-func(ease-out);
+
+		.ha{
+			.bg-contain();
+			.bgImg('wa.png', 5);
+			width: 45px;
+			height: 19px;
+			position: absolute;
+			left: 12px;
+			top: 14px;
+		}
+	}
+}
+
+@-webkit-keyframes say5-c{
+	0%{
+		.transform(scale(0));
+	}
+	60%{
+		.transform(scale(1.5));
+	}
+	100%{
+		.transform(scale(1));
+	}
+}
+
+
+@-webkit-keyframes say5{
+	0%{
+		.transform(scale(1));
+	}
+	100%{
+		.transform(scale(1.3));
+	}
+}

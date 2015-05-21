@@ -16,6 +16,13 @@
 	background-repeat: no-repeat;
 }
 
+.border-radius(@v){
+	-webkit-border-radius: @v;
+	-moz-border-radius: @v;
+	-o-border-radius: @v;
+	border-radius: @v;
+}
+
 .ab-center(@wid, @hei){
 	position: absolute;
 	top: 50%;
@@ -41,4 +48,11 @@
 	-webkit-transform: @v;
 	-o-transform: @v;
 	transform: @v;
+}
+
+.circle(@d, @bg:#fff){
+	background-color: @bg;
+	.border-radius(50%);
+	width: @d;
+	height: @d;
 }

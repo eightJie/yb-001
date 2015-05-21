@@ -1,0 +1,148 @@
+@import '../../common/reset.less';
+@import '../../common/func.less';
+@import '../../common/ani.less';
+@import '../../common/common.less';
+@import 'c.less';
+
+.swiper-4{
+
+	.img-wrap{
+		.bg-contain();
+		.bgImg('img-wrap.png', 4);
+		width: 525px;
+		height: 774px;
+		position: absolute;
+		top: 13px;
+		right: 54px;
+		.ani-name(imgAni4);
+		.trans-origin(right bottom);
+		.ani-time-func(ease-out);
+	}
+	.img-c{
+		.bg-cover();
+		width: 482px;
+  		height: 726px;
+		position: absolute;
+		top: 28px;
+		left: 24px;
+	}
+	.content-txt{
+		left: 332px;
+		bottom: 59px;
+	}
+	.dog{
+		.bg-contain();
+		.bgImg('dog.png', 4);
+		width: 246px;
+		height: 223px;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+	}
+	.light-wrap{
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		bottom: 100px;
+		left: 162px;
+		overflow: hidden;
+		.ani-name(light);
+	}
+	.lights{
+		position: absolute;
+		top: 36px;
+		left: 18px;
+		width: 60px;
+		height: 60px;
+
+		i{
+			.bg-contain();
+			.bgImg('light.png', 4);
+			width: 9px;
+			height: 7px;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		i:nth-child(1){
+			.transform(translate(-8px, 4px) rotateZ(-115deg));
+		}
+		i:nth-child(2){
+			.transform(translate(8px, -5px) rotateZ(-80deg));
+		}
+		i:nth-child(3){
+			.transform(translate(25px, -8px) rotateZ(-56deg));
+		}
+		i:nth-child(4){
+			.transform(translate(46px, -5px) rotateZ(-28deg));
+		}
+		i:nth-child(5){
+			.transform(translate(60px, 6px) rotateZ(0deg));
+		}
+	}
+}
+
+@-webkit-keyframes imgAni4{
+	0%{
+		.transform(translate(120px, 400px) scale(0));
+	}
+	50%{
+		.transform(translate(120px, 400px) scale(1));
+	}
+	100%{
+	}
+}
+
+@-webkit-keyframes dog4{
+	0%{
+		.transform(scale(0));
+	}
+	50%{
+		.transform(scale(1.2));
+	}
+	100%{
+	}
+}
+
+@-webkit-keyframes light{
+	0%{
+		width: 0;
+	}
+	1%{
+		width: 20px;
+	}
+	20%{
+		width: 20px;
+	}
+	21%{
+		width: 40px;
+	}
+	40%{
+		width: 40px;
+	}
+	41%{
+		width: 60px;
+	}
+	60%{
+		width: 60px;
+	}
+	61%{
+		width: 70px;
+	}
+	70%{
+		width: 70px;
+	}
+	71%{
+		width: 100px;
+	}
+	79%{
+		width: 100px;
+	}
+	80%{
+		width: 0;
+	}
+	100%{
+		width: 0;
+	}
+}

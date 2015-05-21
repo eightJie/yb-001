@@ -1,0 +1,34 @@
+@import '../../common/func.less';
+@import '../../common/ani.less';
+
+@bgColor: #000;
+
+body{
+	background-color: @bgColor;
+}
+
+.bgImg(@name, @page:1){
+	background-image: url('../../imgs/tuya/@{page}/@{name}');
+}
+
+.bgImgRoot(@name){
+	background-image: url('../../imgs/tuya/@{name}');
+}
+
+.swiper-slide{
+	background-color: @bgColor;
+}
+
+.img-wrap{
+	position: absolute;
+	z-index: 500;
+}
+
+.content-txt{
+	color: #fff;
+	text-align: left;
+	line-height: 1.5;
+	position: absolute;
+	z-index: 2000;
+}
+

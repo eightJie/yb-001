@@ -1,0 +1,82 @@
+@import '../../common/reset.less';
+@import '../../common/func.less';
+@import '../../common/ani.less';
+@import '../../common/common.less';
+@import 'c.less';
+
+.swiper-3{
+
+	.img-wrap{
+		background-color: #fff;
+		width: 640px;
+		height: 869px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+	.img-c{
+		.bg-cover();
+		width: 587px;
+		height: 796px;
+		position: absolute;
+		top: 14px;
+		left: 24px;
+	}
+	.content-txt{
+		top: 39px;
+		right: 41px;
+	}
+	.dog{
+		.bg-contain();
+		.bgImg('dog.png', 3);
+		width: 128px;
+		height: 133px;
+		position: absolute;
+		top: 19px;
+		left: 73px;
+		.ani-name(dog3);
+	}
+	.say{
+		.bg-contain();
+		.bgImg('say.png', 3);
+		width: 73px;
+		height: 63px;
+		position: absolute;
+		top: 21px;
+		left: 211px;
+		.ani-name(say3);
+		.trans-origin(left bottom);
+
+		.ka{
+			.bg-contain();
+			.bgImg('ka.png', 3);
+			width: 36px;
+			height: 25px;
+			position: absolute;
+			top: 12px;
+  			left: 18px;
+		}
+	}
+}
+
+@-webkit-keyframes dog3{
+	0%{
+		.transform(translateY(250px));
+	}
+	50%{
+		.transform(translateY(-20px));
+	}
+	100%{
+	}
+}
+@-webkit-keyframes say3{
+	0%{
+		.transform(scale(0));
+	}
+	50%{
+		.transform(scale(1.2));
+	}
+	100%{
+		.transform(scale(1));
+	}
+}

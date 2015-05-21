@@ -1,0 +1,54 @@
+@import '../../common/reset.less';
+@import '../../common/func.less';
+@import '../../common/ani.less';
+@import '../../common/common.less';
+@import 'c.less';
+
+.swiper-2{
+	.img-wrap{
+		background-color: #fff;
+		width: 540px;
+		height: 775px;
+		position: absolute;
+		left: 100px;
+		top: 0;
+		.ani-name(imgAni);
+	}
+	.img-c{
+		width: 525px;
+		height: 759px;
+		position: absolute;
+		top: 0;
+		left: 15px;
+	}
+	.content-txt{
+		bottom: 59px;
+		left: 120px;
+	}
+	.dog{
+		.bg-contain();
+		.bgImg('dog.png', 2);
+		width: 218px;
+		height: 214px;
+		position: absolute;
+		bottom: -34px;
+		right: 29px;
+		.ani-name(dog)
+	}
+}
+
+@-webkit-keyframes imgAni{
+	0%{
+		.transform(translateX(-300px) translateY(-300px) rotateZ(-720deg) scale(.2));
+	}
+	100%{
+	}
+}
+
+@-webkit-keyframes dog{
+	0%{
+		.transform(translateY(250px));
+	}
+	100%{
+	}
+}
