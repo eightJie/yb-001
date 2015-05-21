@@ -52,7 +52,7 @@ define(function() {
 
 				$cover.css('visibility', 'visible');
 				$cover.find('.animated').addClass('block');
-				$cover.on('touchstart', play);
+				$cover.on('swipeUp', play);
 			}
 
 			/**
