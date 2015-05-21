@@ -138,6 +138,7 @@
 		left: 98px;
 	}
 	.img-wrap{
+		display: none;
 		.bg-contain();
 		.bgImg('img-wrap.png', 7);
 		width: 545px;
@@ -192,6 +193,18 @@
 	}
 }
 
+.swiper-6.state-list{
+	.t-by, .t-tip{
+		display: none;
+	}
+	.title.animated{
+		.ani-name(title-small);
+	}
+	.img-wrap{
+		display: block;
+	}
+}
+
 @-webkit-keyframes t-down{
 	0%{
 		.transform(translateX(-500px));
@@ -228,5 +241,12 @@
 	}
 	100%{
 		width: 495px;
+	}
+}
+@-webkit-keyframes title-small{
+	0%{
+	}
+	100%{
+		.transform(translate(-100px, -317px) scale(.6));
 	}
 }

@@ -33,8 +33,23 @@ $(window).on('load', function() {
 	 * 播放每个slide里的动画
 	 */
 	function showAni() {
-		$('.swiper-slide-active').find('.animated').addClass('block');
+		var $active = $('.swiper-slide-active');
+
+		$active.find('.animated').addClass('block');
 		$('.swiper-slide-prev, .swiper-slide-next').find('.animated').removeClass('block');
+
+		if($active.hasClass('swiper-6')){ //第六页时
+			$active.on('touchstart', function(){
+				showPhotos($active);
+			});
+		}
+	}
+
+	/**
+	 * 第六页，切换至图片列表
+	 */
+	function showPhotos($active){
+
 	}
 
 	/**
