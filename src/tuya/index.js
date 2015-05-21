@@ -49,7 +49,7 @@ $(window).on('load', function() {
 	 * 第六页，切换至图片列表
 	 */
 	function showPhotos($active){
-
+		$active.addClass('state-list');
 	}
 
 	/**
