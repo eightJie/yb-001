@@ -26,9 +26,12 @@
 		    left: 50%;
 		    margin-left: -15px;
 		    z-index: 2;
-		    .ani-name(cover-minute);
+		}
+		.minute.animated{
+			.ani-name(cover-minute);
 		    .ani-duration(6s);
 		}
+
 
 		.hour{
 			.bg-contain();
@@ -41,7 +44,9 @@
 		    left: 50%;
 		    margin-left: -31px;
 		    z-index: 1;
-		    .ani-name(cover-hour);
+		}
+		.hour.animated{
+			.ani-name(cover-hour);
 		    .ani-duration(6s);
 		}
 
@@ -67,7 +72,6 @@
 		top: 559px;
 		left: 464px;
 		z-index: 100;
-		.ani-count(5);
 		.ani-dir-both();
 	}
 }

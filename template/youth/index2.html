@@ -12,13 +12,25 @@
 
 <div class="wrap">
 	<div id="loading" class="loading animated infinite block rotate-x duration-2"></div>
+    <div class="audio-section">
+        <section class="u-audio  wcomp_mainaudio" data-wb_drag="{&quot;refid&quot;:&quot;#btn_audio2&quot;}" data-wb_set_audio="{&quot;refid&quot;:&quot;#btn_audio2&quot;,&quot;audioid&quot;:50}" data-wbi="" data-ws_src="../../imgs/youth/music.mp3" data-wsm_audio="" id="mainaudio" style="z-index: 1000">
+                        
+        <p class="btn_audio" id="coffee_flow">
+                            
+        <strong class="txt_audio z-hide " id="txt_controller">关闭</strong> <span class="css_sprite01 audio_open" id="btn_audio2"></span>
+                        
+        </p>
+                    
+        </section>
+                    <!-- <audio src="common/1.mp3" autoplay loop>浏览器版本太低，无法播放</audio> -->
+    </div>
     <div id="cover" class="cover">
         <div class="clock">
-            <div class="hour animated"></div>
-            <div class="minute animated"></div>
+            <div id="cover-hour" class="hour"></div>
+            <div id="cover-minute" class="minute"></div>
         </div>
         <div class="bg-txt"></div>
-        <div class="hand animated fadeOut duration-f5"></div>
+        <div id="cover-hand" class="hand animated fadeOut duration-f5 infinite"></div>
     </div>
 	 <div class="swiper-container">
         <div  id='main' class="swiper-wrapper">
@@ -44,7 +56,7 @@
             <div class="swiper-slide swiper-2 horizontal">
                 <div class="se animated duration-1"></div>
                 <div class="img-wrap animated duration-2">
-                    <div class="img-c" style="background-image: url(../../imgs/youth/1/img.png)">
+                    <div class="img-c" style="background-image: url(../../imgs/youth/2/img.png)">
                     </div>
                 </div>
                 <div class="content-txt">
@@ -114,7 +126,7 @@
                 <div class="clock-wrap">
                     <div class="clock-item clock-1 animated infinite clock-ani-y duration-12 delay-3"></div>
                     <div class="clock-item clock-2"></div>
-                    <div class="clock-item clock-3 animated infinite clock-ani-y duration-12 delay-3"></div>
+                    <div class="clock-item clock-3 animated infinite clock-ani-x duration-12 delay-3"></div>
                     <div class="clock-item clock-4"></div>
                 </div>
             </div>
@@ -129,7 +141,7 @@
                     <p class="fadeIn animated duration-1 delay-2d5">只是不相信你已离开</p>
                 </div>
                 <div class="clock-wrap">
-                    <div class="clock-item clock-1 animated infinite clock-ani-y duration-12 delay-2"></div>
+                    <div class="clock-item clock-1 animated infinite clock-ani-x duration-12 delay-2"></div>
                     <div class="clock-item clock-2"></div>
                     <div class="clock-item clock-3 animated infinite clock-ani-y duration-12 delay-2"></div>
                     <div class="clock-item clock-4"></div>
@@ -139,8 +151,7 @@
     </div>
 </div>
 
-<script src="../../lib/zepto/zepto.min.js"></script>
-<script src="../../lib/swiper/js/swiper.js"></script>
-<script src="../../src/youth/index.js"></script>
+<script src="../../lib/requirejs/require.js"></script>
+<script src="../../src/youth/main.js"></script>
 </body>
 </html>

@@ -25,6 +25,11 @@ module.exports = function(grunt) {
         {
           expand: true,
           ext: '.css',
+          src: 'lib/**/*.less'
+        },
+        {
+          expand: true,
+          ext: '.css',
           src: 'common/**/*.less'
         },
         {
@@ -37,7 +42,7 @@ module.exports = function(grunt) {
 
     watch: {
       styles: {
-        files: ['common/**/*.less', 'src/**/*.less'], // which files to watch
+        files: ['lib/**/*.less', 'common/**/*.less', 'src/**/*.less'], // which files to watch
         tasks: ['less'],
         options: {
           nospawn: true

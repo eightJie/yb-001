@@ -1,0 +1,196 @@
+/**
+ * 声音元件
+ * -u-audio
+ */
+.u-audio {
+	position: absolute;
+	top: 40px;
+	right: 0;
+	width: 132px;
+	height: 73px;
+	z-index: 200;
+}
+
+.u-audio .res_audio {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	height: 0;
+	width: 0;
+}
+
+.u-audio .btn_audio {
+	width: 100%;
+	padding-top: 29px;
+	height: 44px;
+}
+
+.u-audio .btn_audio strong, .u-audio .btn_audio .audio_open {
+	display: inline-block;
+	height: 44px;
+	line-height: 44px;
+	vertical-align: middle;
+}
+
+.u-audio .btn_audio strong {
+	width: 57px;
+	font-size: 24px;
+	color: #fff;
+	opacity: 1;
+}
+
+.u-audio .btn_audio .audio_open {
+	position: absolute;
+	bottom: 0;
+	left: 56px;
+	width: 44px;
+}
+
+.u-audio .btn_audio strong.z-hide {
+	opacity: 0;
+}
+
+.u-audio .btn_audio strong.z-move {
+	-webkit-transition: opacity 0.5s;
+	-moz-transition: opacity 0.5s;
+	-ms-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.u-audio.z-low {
+	z-index: 1;
+}
+
+/*
+AAAAAA
+*/
+
+/*微软雅体 将原有的bold属性去掉*/
+/**
+ * loading
+ * -u-pageLoading
+ */
+
+/**
+ * = unit 统一元件样式
+ *******************************************************************************************************/
+/**
+ * 箭头指示元件
+ * -u-arrow
+ */
+.f_arrow {
+	position: fixed;
+	bottom: 30px;
+	left: 50%;
+	z-index: 150;
+	width: 80px;
+	height: 80px;
+	margin-left: -39px;
+	/*background: rgba(160,160,160,0.6); border-radius: 50%;*/
+}
+
+.f_arrow p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -14px 0 0 -25px;
+	width: 50px;
+	height: 28px;
+	background-position: 0 -82px;
+	-webkit-animation: f_arrow 1.5s infinite ease-in-out;
+	-moz-animation: f_arrow 1.5s infinite ease-in-out;
+	animation: f_arrow 1.5s infinite ease-in-out;
+}
+
+.css_sprite01 {
+	background-image: url(../../imgs/css_sprite01.png) !important;
+	background-repeat: no-repeat !important;
+}
+
+/*   share page */
+.share-wrapper {
+	background-color: #201e2a;
+}
+
+.project-icon {
+	text-align: center;
+	padding: 76px 0;
+}
+
+.project-icon img, img.project-icon-img {
+	width: 156px;
+	height: 156px;
+	margin: 0 auto;
+	border: none;
+	/*  border: 2px solid #211e30;
+  border-radius: 10px;*/
+}
+
+.project-name {
+	text-align: center;
+	font-size: 30px;
+	color: #ffde00;
+	padding-top: 36px;
+}
+
+.project-user {
+	text-align: center;
+	font-size: 18px;
+	color: #ffde00;
+	margin-top: 24px;
+}
+
+.share-line {
+	margin-top: 64px;
+	width: 100%;
+	height: 8px;
+	background: url(../../imgs/line.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	font-size: 0;
+	overflow: hidden;
+}
+
+.share-buttons {
+	text-align: center;
+	width: 100%;
+	height: 200px;
+	margin: 76px auto;
+
+}
+
+.share-buttons .tomake {
+	width: 162px;
+	height: 60px;
+	display:block;
+	margin:0px auto;
+	background-image: url(../../imgs/share-make.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.share-logo_wrapper {
+	position: absolute;
+	bottom: 0px;
+	text-align: center;
+	width: 100%;
+}
+
+.share-logo {
+	margin-left: auto;
+	margin-right: auto; 
+	margin-bottom : 40px;
+	width: 147px;
+	height: 44px;
+	background-image: url(../../imgs/plogo.png);
+
+	font-size: 0;
+	overflow: hidden;
+}
+
+.project_fav {
+	width: 0;
+	height: 0;
+}
