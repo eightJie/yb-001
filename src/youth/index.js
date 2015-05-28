@@ -52,7 +52,37 @@ define(function() {
 
 				$cover.css('visibility', 'visible');
 				$cover.find('.animated').addClass('block');
-				$cover.on('touchstart', play);
+				// $cover.on('swipeUp', play);
+				$cover.on('touchstart', function(evt){ //侦听上滑事件
+					var touchObj = evt.changedTouches[0],
+						touchEndObj;
+					var pageX = touchObj.pageX;
+					var pageY = touchObj.pageY;
+					var pageXEnd, pageYEnd;
+
+					$cover.on('touchmove', function(evt){
+						evt.preventDefault();
+					});
+
+					$cover.on('touchend', function(evt){
+						touchEndObj = evt.changedTouches[evt.changedTouches.length - 1];
+						pageXEnd = touchEndObj.pageX;
+						pageYEnd = touchEndObj.pageY;
+
+						if (Math.abs(pageYEnd - pageY) > 2) {
+							if (pageYEnd - pageY < 0) { //上滑
+								play();
+							} else { //下滑
+							}
+						}
+
+						$cover.off('touchmove');
+						$cover.off('touchend');
+
+					});
+
+					evt.preventDefault();
+				});
 			}
 
 			/**
