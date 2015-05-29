@@ -64,6 +64,52 @@
 		  	top: 12px;
 		}
 	}
+
+	.bubbles{
+		>div{
+			position: absolute;
+			z-index: 499;
+		}
+		.bb-1{
+			.circle(75px);
+			right: 328px;
+			top: 742px;
+			.ani-name(bb-1);
+		}
+		.bb-2{
+			.circle(39px);
+			right: 299px;
+			top: 764px;
+			.ani-name(bb-2);
+		}
+		.bb-3{
+			.circle(19px);
+			right: 302px;
+			top: 822px;
+			.ani-name(bb-3);
+		}
+		.bb-4{
+			.circle(75px);
+			right: 0;
+			top: -100px;
+			.ani-name(bb-4);
+			z-index: 501;
+		}
+		.bb-5{
+			.circle(39px);
+			right: 100px;
+			top: -100px;
+			.ani-name(bb-5);
+			z-index: 501;
+		}
+		.bb-6{
+			.circle(19px);
+			right: 200px;
+			top: -100px;
+			.ani-name(bb-6);
+			z-index: 501;
+		}
+	}
 }
 
 @-webkit-keyframes imgAin{
@@ -83,5 +129,88 @@
 	}
 	100%{
 		.transform(scale(1));
+	}
+}
+
+@-webkit-keyframes bb-1{
+	0%{
+		opacity: 0;
+		.transform(translateX(200px) translateY(300px));
+		.ani-time-func(ease-out);
+	}
+	1%{
+		opacity: 1;
+	}
+	20%{
+		.transform(translateX(200px) translateY(250px));
+		.ani-time-func(ease-out);
+	}
+	40%{
+		.transform(translateX(150px) translateY(240px));
+	}
+	100%{
+	}
+}
+
+@-webkit-keyframes bb-2{
+	0%{
+		opacity: 0;
+		.transform(translateX(250px) translateY(300px));
+		.ani-time-func(linear);
+	}
+	1%{
+		opacity: 1;
+	}
+	100%{
+	}
+}
+@-webkit-keyframes bb-3{
+	0%{
+		opacity: 0;
+		.transform(translateX(180px) translateY(250px));
+		.ani-time-func(linear);
+	}
+	1%{
+		opacity: 1;
+	}
+	100%{
+	}
+}
+@-webkit-keyframes bb-4{
+	0%{
+		opacity: 0;
+		.transform(translateX(0px) translateY(1200px));
+		.ani-time-func(linear);
+	}
+	1%{
+		opacity: 1;
+		.ani-time-func(linear);
+	}
+	30%{
+		.transform(translateX(-300px) translateY(700px));
+		.ani-time-func(ease-out);
+	}
+	100%{
+	}
+}
+@-webkit-keyframes bb-5{
+	0%{
+		opacity: 0;
+		.transform(translateX(0px) translateY(1200px));
+		.ani-time-func(linear);
+	}
+	1%{
+		opacity: 1;
+		.ani-time-func(linear);
+	}
+	15%{
+		.transform(translateX(0px) translateY(900px));
+		.ani-time-func(ease-out);
+	}
+	40%{
+		.transform(translateX(-320px) translateY(500px));
+		.ani-time-func(ease-in);
+	}
+	100%{
 	}
 }
