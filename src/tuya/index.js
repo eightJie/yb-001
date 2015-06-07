@@ -46,23 +46,44 @@ $(window).on('load', function() {
 	 * @return {[type]} [description]
 	 */
 	function sixHandler($active) {
+		var $pre = $('.swiper-slide-prev');
+
 		if ($active.hasClass('swiper-6')) { //第六页时
 
-			//涂抹事件监听
-			$active.on('touchstart', function() {
-				showPhotos($active);
+			//涂抹
+			var $ele = $active.find('.t-up-up');
+			$ele.eraser({
+				isStopPropagation: true,
+				width: 390,
+				height: 127,
+				size: 60,
+				progressFunction: function(p) {
+					if (p * 100 > 60) {
+						var $ele = $active.find('.t-up-up');
+
+						$ele.eraser('resetStopPropagation')
+						$ele.eraser('clear');
+
+						setTimeout(function() {
+							showPhotos($active);
+						}, 500);
+					}
+				}
 			});
 
 			//初始化swiper
 			var mySwiper = new Swiper('.swiper-container-2', {});
 
 		} else {
-			sixClear($active);
+			if ($pre.hasClass('swiper-6')) {
+				sixClear($pre);
+			}
 		}
 	}
 
 	//重置第六页页面状态
 	function sixClear($active) {
+		$active.find('.t-up-up').eraser('reset');
 		$active.removeClass('state-list').removeClass('state-view');
 		$active.off('touchstart');
 		$active.find('.img-wrap').off('touchstart');
@@ -72,7 +93,6 @@ $(window).on('load', function() {
 	 * 第六页，切换至图片列表
 	 */
 	function showPhotos($active) {
-		$active.off('touchstart');
 		$active.addClass('state-list');
 
 		//显示左右滑动浏览图片swiper
