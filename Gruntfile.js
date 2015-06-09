@@ -35,7 +35,7 @@ module.exports = function(grunt) {
         {
           expand: true,
           ext: '.css',
-          src: 'src/**/*.less'
+          src: 'src/gf/*.less'
         }]
       }
     },

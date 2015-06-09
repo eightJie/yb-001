@@ -1,4 +1,4 @@
-.bg-contain{
+.bg-contain(){
 	-webkit-background-size: contain;
 	-moz-background-size: contain;
 	-o-background-size: contain;
@@ -7,7 +7,12 @@
 	background-repeat: no-repeat;
 }
 
-.bg-cover{
+.bg-contain(@url){
+	.bg-contain();
+	background-image: url(@url);
+}
+
+.bg-cover(){
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -15,6 +20,12 @@
 	background-position: center;
 	background-repeat: no-repeat;
 }
+
+.bg-cover(@url){
+	.bg-cover();
+	background-image: url(@url);
+}
+
 
 .border-radius(@v){
 	-webkit-border-radius: @v;
@@ -32,6 +43,15 @@
 	margin-left: -@wid/2;
 	margin-top: -@hei/2;
 
+}
+
+.ab(@wid, @hei, @left:0px, @top:0px, @zIndex: 1){
+	position: absolute;
+	top: @top;
+	left: @left;
+	width: @wid;
+	height: @hei;
+	z-index: @zIndex;
 }
 
 .bg-normal(@url){

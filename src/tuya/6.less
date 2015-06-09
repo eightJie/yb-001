@@ -219,7 +219,7 @@
 		display: none;
 		position: absolute;
 		left: 88px;
-		bottom: 51px;
+		top: 1008px;
 		width: 465px;
 	}
 	.sheep{
@@ -229,7 +229,7 @@
 		height: 162px;
 		position: absolute;
 		bottom: 0;
-		left: 0;
+		left: 44px;
 		z-index: 2;
 	}
 	.gl{
@@ -247,9 +247,51 @@
 		.ani-fill-both();
 		.ani-time-func(linear);
 	}
+	.bubbles2, .bubbles3{
+		display: none;
+	}
+	.bb-1{
+		.circle(78px);
+		position: absolute;
+		top: 100px;
+		right: 19px;
+	}
+	.bb-2{
+		.circle(28px);
+		position: absolute;
+		top: 93px;
+		right: 95px;
+	}
+	.bb-3{
+		.circle(16px);
+		position: absolute;
+		top: 130px;
+		right: 126px;
+	}
+	.bb-4{
+		 .circle(52px);
+		 position: absolute;
+		top: 790px;
+  		left: 152px;
+	}
+	.bb-5{
+		.circle(48px);
+		position: absolute;
+		top: 792px;
+  		left: 196px;
+	}
+	.bb-6{
+		.circle(16px);
+		position: absolute;
+		top: 842px;
+  		left: 138px;
+	}
 }
 
 .swiper-6.state-list{
+	.bubbles2, .bubbles3{
+		display: block;
+	}
 	.t-by, .t-tip{
 		display: none;
 	}
@@ -290,6 +332,9 @@
 		visibility: visible;
 	}
 	.sheep-wrap{
+		display: none;
+	}
+	.bubbles3{
 		display: none;
 	}
 }
