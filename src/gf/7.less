@@ -39,12 +39,18 @@
 
 @-webkit-keyframes s7-img{
 	0%{
-		.transform(scale(0) rotateZ(-360deg));
+		.transform(scale3d(0, 0, 0) rotateZ(-360deg));
+	}
+	100%{
+		.transform(scale3d(1, 1, 1) rotateZ(0deg));
 	}
 }
 
 @-webkit-keyframes s7-dir{
 	0%{
-		.transform(scale(0));
+		.transform(scale3d(0, 0, 0));
+	}
+	100%{
+		.transform(scale3d(1, 1, 1));
 	}
 }
