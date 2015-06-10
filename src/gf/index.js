@@ -1,7 +1,7 @@
 define(function() {
 	return function() {
-		$(function() {
-
+		$(window).on('load', function() {
+			
 			var SLIDER_NUM = $('#swiper-container .swiper-slide').length;
 
 			var mySwiper = new Swiper('#swiper-container', {
