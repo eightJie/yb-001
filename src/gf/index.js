@@ -5,7 +5,6 @@ define(function() {
 			var SLIDER_NUM = $('#swiper-container .swiper-slide').length;
 
 			var mySwiper = new Swiper('#swiper-container', {
-				direction: 'vertical',
 				onInit: function(s) {
 
 					$('#loading').remove();
@@ -16,8 +15,8 @@ define(function() {
 					showAni();
 
 				},
-				loop: true,
-				loopedSlides: SLIDER_NUM
+				// loop: true,
+				// loopedSlides: SLIDER_NUM
 			});
 
 			// });

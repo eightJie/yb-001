@@ -24,6 +24,10 @@
 	-webkit-animation-duration: 1s;
     animation-duration: 1s;
 }
+.animated.duration-1d5{
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+}
 .animated.duration-2{
 	-webkit-animation-duration: 2s;
     animation-duration: 2s;
@@ -236,6 +240,22 @@
     100%{
     	// -webkit-transform: translateX(0);
     	// transform: translateX(0);
+    }
+}
+
+.animated.flyInBottom{
+    .ani-name(flyInBottom);
+}
+@-webkit-keyframes flyInBottom{
+    0% {
+        -webkit-transform: translateY(1000px);
+        transform: translateY(1000px);
+    }
+}
+@keyframes flyInBottom{
+    0% {
+        -webkit-transform: translateY(1000px);
+        transform: translateY(1000px);
     }
 }
 

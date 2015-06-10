@@ -1,0 +1,50 @@
+@import '../../common/reset.less';
+@import '../../common/func.less';
+@import '../../common/ani.less';
+@import '../../common/common.less';
+@import 'c.less';
+
+.swiper-7{
+	.img-wrap{
+		.ani-name(s7-img);
+	}
+
+	.content-txt{
+		text-align: center;
+		top: 886px;
+		left: 357px;
+	}
+
+	.txt-wrap{
+		.bgImg('txt-wrap.png', 7);
+		width: 396px;
+		height: 211px;
+	}
+
+	.dir{
+		.bg-contain();
+		.bgImg('dir.png', 7);
+		.ab(122px, 95px, 519px, 730px);
+		.ani-name(s7-dir);
+		.trans-origin(right center);
+	}
+
+	.dir-inner{
+		.bg-contain();
+		.bgImg('dir-inner.png', 7);
+		.ab(104px, 149px, 20px, 12px);
+	}
+
+}
+
+@-webkit-keyframes s7-img{
+	0%{
+		.transform(scale(0) rotateZ(-360deg));
+	}
+}
+
+@-webkit-keyframes s7-dir{
+	0%{
+		.transform(scale(0));
+	}
+}

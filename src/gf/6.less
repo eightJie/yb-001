@@ -1,0 +1,38 @@
+@import '../../common/reset.less';
+@import '../../common/func.less';
+@import '../../common/ani.less';
+@import '../../common/common.less';
+@import 'c.less';
+
+.swiper-6{
+
+	.content-txt{
+		text-align: center;
+		top: 894px;
+		left: 356px;
+	}
+
+	.txt-wrap{
+		.bgImg('txt-wrap.png', 6);
+		width: 407px;
+		height: 195px;
+	}
+
+	.balloon{
+		.bg-contain();
+		.bgImg('balloon.png', 6);
+		.ab(108px, 363px, 532px, 612px);
+		.ani-name(balloon);
+		.ani-time-func(linear);
+	}
+}
+
+@-webkit-keyframes balloon{
+	0%{
+		.transform(translateY(500px));
+		opacity: 0;
+	}
+	10%{
+		opacity: 1;
+	}
+}

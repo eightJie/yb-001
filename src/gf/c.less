@@ -68,5 +68,14 @@ body{
 	.bg-contain();
 	.bgImgRoot('face.png');
 	.ab(378px, 374px, 0, 660px);
+	z-index: 100;
+
+	&:after{
+		content: '';
+		display: block;
+		.bg-contain();
+		.bgImgRoot('eye-l.gif');
+		.ab(114px, 67px, 38px, 250px);
+	}
 }
 

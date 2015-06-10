@@ -12,5 +12,5 @@ require.config({
 
 require(['zepto', 'underscore', 'coffee', 'swiper', 'shower', 'index'], function(zepto, underscore, coffee, swiper, shower, index) {
 	index();
-	// shower();
+	shower();
 });
